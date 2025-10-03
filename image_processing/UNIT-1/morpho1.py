@@ -3,13 +3,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load a binary mask (use any black/white image)
-img = cv2.imread("Imaging/UNIT1/HCL-Training/image_processing/morpho.png", 0)
+img = cv2.imread("bmask.png", 0)
 
 if img is None:
-    raise FileNotFoundError("⚠️ Please put 'binary_mask.png' in the same folder.")
+    raise FileNotFoundError("Please put in the same folder.")
 
 # Create a kernel (structuring element)
-kernel = np.ones((5, 5), np.uint8)
+kernel = np.ones((15,15), np.uint8)
 
 # Opening: removes small white noise
 opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)

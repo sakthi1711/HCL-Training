@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # Load image
-img = cv2.imread("Imaging\\UNIT1\\HCL-Training\\image_processing\\UNIT-1\\chessboard.jpg", 0)
+img = cv2.imread("city_build.jpg", 0)
 
 if img is None:
     raise FileNotFoundError("Please in the same folder.")
