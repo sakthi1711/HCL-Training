@@ -1,20 +1,6 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-
-# Sample dataset
-data = {'Area':[1000,1500,2000,2500,3000],
-        'Bedrooms':[2,3,4,4,5],
-        'Price':[200000,250000,300000,350000,400000]}
-df = pd.DataFrame(data)
-
-X = df[['Area','Bedrooms']]   # Independent variables
-y = df['Price']               # Dependent variable
-
-X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2,random_state=42)
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
 data = {'Area':[1000,1500,2000,2500,3000],
